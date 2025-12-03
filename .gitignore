@@ -1,0 +1,78 @@
+# Node/Bun deps and lockfiles
+node_modules/
+.pnpm-debug.log
+pnpm-lock.yaml
+yarn.lock
+package-lock.json
+bun.lockb
+
+# TypeScript
+*.tsbuildinfo
+dist/
+build/
+out/
+lib/
+*.d.ts
+# compiled JS next to TS (if any)
+**/*.js
+**/*.js.map
+**/*.cjs
+**/*.mjs
+
+# Vite / frontend
+apps/client/dist/
+apps/client/.vite/
+apps/client/.env.local
+apps/client/.env.*.local
+apps/client/node_modules/
+
+# Bun workspace / local config
+.bun/
+.bunfig.toml
+
+# Editor / OS
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Environment
+.env
+.env.*.local
+.env.local
+.env.production
+.env.development
+
+# Docker
+docker-compose.override.yml
+docker-compose.*.yml
+.Dockerfile
+docker-entrypoint-*.sh
+
+# Tests / coverage
+coverage/
+.nyc_output/
+
+# Lock files for other package managers (already above, keep for safety)
+pnpm-lock.yaml
+yarn.lock
+
+# JetBrains
+*.iml
+.idea/
+
+# OS generated files
+*.swp
+*~
+# Optional: local bun or tooling caches
+.cache/
+```
+
+notes.md
+

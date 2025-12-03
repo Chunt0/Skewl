@@ -1,0 +1,14 @@
+{
+  "name": "my-app",
+  "version": "0.0.0",
+  "private": true,
+  "workspaces": ["apps/*", "packages/*"],
+  "scripts": {
+    "dev:client": "bun --watch -- bun run --cwd apps/client dev",
+    "dev:server": "bun --watch -- bun run --cwd apps/server dev",
+    "dev": "concurrently \"bun run dev:server\" \"bun run dev:client\"",
+    "build": "bun run build:client && bun run build:server",
+    "build:client": "bun --cwd apps/client build",
+    "build:server": "bun --cwd apps/server build"
+  }
+}
