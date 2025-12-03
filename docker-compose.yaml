@@ -1,0 +1,24 @@
+services:
+  skewl:
+    build:
+      context: .
+      dockerfile: client/Dockerfile
+    image: client
+    ports:
+      - "5173:5173"
+    restart: unless-stopped
+
+  skewl-backend:
+    network_mode: host
+    build:
+      context: .
+      dockerfile: server/Dockerfile
+    image: server
+    ports:
+      - "3003:3003"
+    restart: unless-stopped
+    environment:
+      NODE_ENV: production
+      PORT: "3003"
+    depends_on:
+      - skewl
