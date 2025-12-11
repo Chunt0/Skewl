@@ -12,6 +12,9 @@
     "build:server": "bun --cwd apps/server build"
   },
   "dependencies": {
-    "concurrently": "^9.2.1"
+    "concurrently": "^9.2.1",
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
   }
 }

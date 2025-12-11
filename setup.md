@@ -7,6 +7,7 @@ This document explains how to create a Bun-based monorepo with a React + Tailwin
 # Run these commands in a terminal:
 # bun init
 # bun add concurrently         # optional: we'll replace it with a Bun runner later
+# bun add -d typscript        # To add tsserver
 # rm src/index.ts             # remove default index file if present
 
 # Root package.json (improved)
